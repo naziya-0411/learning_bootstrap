@@ -1,0 +1,82 @@
+@import "bootstrap/scss/bootstrap";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.custom-yellow {
+    background-color: #FAD725;
+}
+
+.custom-yellow-border {
+    border: 5px solid #FAD725;
+}
+
+.hero{
+    .hero-text{
+        h2{
+            font-size: 32px;
+            padding-bottom: 2rem;
+            img{
+                height: 4rem;
+            }
+        }
+
+        p{
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+.navbar-brand::after {
+    content: "";
+    display: inline-block;
+    width: 0.3em;
+    height: 0.3em;
+    background-color: #BC424E;
+    border-radius: 50%;
+    /* makes it a circle */
+    margin-left: 0.4em;
+    /* space between text and dot */
+    vertical-align: middle;
+    /* aligns dot with text */
+}
+
+.team-member-outer-container {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 4px;
+    top: 25rem;
+    right: 20rem;
+}
+
+.team-member1 {
+    // transform: translateX();
+}
+
+.team-member2 {
+    transform: translateX(-1.2rem);
+}
+
+.team-member3 {
+    transform: translateX(-2.2rem);
+}
+
+.team-member4 {
+    transform: translateX(-3.2rem);
+}
+
+.add-team-member {
+    transform: translateX(-4.5rem);
+}
+
+@media screen and (min-width: 1400px) {
+    .team-member-outer-container{
+        position: absolute;
+        right: 35rem;
+        top: 25rem;
+    }
+}
