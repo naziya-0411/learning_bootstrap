@@ -10,6 +10,7 @@
 
 .custom-yellow {
     background-color: #FAD725;
+    color: black;
 }
 
 .custom-yellow-border {
@@ -70,6 +71,10 @@
     border-radius: 4px;
     top: 25rem;
     right: 20rem;
+
+    .team-member-container {
+        transform: translateX(2rem);
+    }
 }
 
 .team-member1 {
@@ -93,12 +98,14 @@
 }
 
 .function-container {
+    padding-bottom: 6rem;
+
     .function-box {
         box-shadow: 0px 17px 33px -14px #02160512;
     }
 
     img {
-        width: 5.5rem;
+        width: 4.5rem;
     }
 
     p {
@@ -107,14 +114,17 @@
 }
 
 .optimize-outer-container {
-    padding: 4rem 2rem 4rem 2rem;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+
     p {
         color: #727272;
     }
 
     .optimize-container {
-
         .optimize-box {
+            padding-bottom: 6rem;
+
             img {
                 width: 3rem;
                 margin: 2rem;
@@ -128,20 +138,62 @@
     }
 }
 
+.business-solution {
+    background-color: #F2F2F2;
 
-@media screen and (min-width: 768px) {
-    .function-container {
+    .business-solution-content {
         display: flex;
-        gap: 2rem;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
+
+        .learn-more{
+            width: fit-content;
+        }
     }
 
-    .optimize-outer-container {
-        .optimize-container {
-            display: flex;
-            gap: 2rem; 
+    .business-solution-image {
+
+    }
+}
+
+.qualities-container{
+    padding: 5% 15% 5% 15%;
+    // padding-left: 15%;
+    // padding-right: 15%;
+    .quality-box{
+        img{
+            margin: 2rem;
+            margin-left: 0px;
         }
+        a{
+            text-decoration: none;
+            color: #6F77F1;
+        }
+    }
+}
+
+.choose-us-container{   
+    background-color: #fafafa;
+    padding: 4rem;
+
+    .choose-us-card-box{
+        img{
+            width: 15rem;
+        }
+        p{
+            color: #727272;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {
+    .business-solution {
+        padding: 4rem 10rem 4rem 10rem;
+        padding-bottom: 10rem;
+
+        .business-solution-image {}
     }
 }
 
@@ -167,4 +219,15 @@
             }
         }
     }
+
+    .function-container {
+        .function-box {
+            .function-box-heading {
+                display: flex;
+            }
+        }
+    }
+
+
+
 }
